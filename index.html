@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ЛР 3 Шахматы</title>
+</head>
+<style>
+	.chessboard{
+width: 1000px; height:1000px;
+font-size:30px; 
+text-align:center;
+border: solid;
+border-radius: 40px;
+border-width: 40px;
+border-color: dark;
+background-color: orange;}
+
+.chessboard>div{height:11.55%;}
+
+.chessboard>div>div{
+width:11.55%; height:100%;
+display:inline-block; vertical-align:top;}
+
+.chessboard>div:nth-child(odd)>div:nth-child(even),
+.chessboard>div:nth-child(even)>div:nth-child(odd)
+{background-color:white; color:black;}
+
+.chessboard>div:nth-child(1),.chessboard>div:nth-child(10)
+{height: 3.2%;background-color:grey; color:black;border: solid; border-color: grey;border-radius: 10px 10px 0 0;}
+
+.chessboard>div>div:nth-child(1),.chessboard>div>div:nth-child(10)
+{width: 3.2%;background-color:grey; color:black;border: solid;border-color: grey;}
+	
+</style>
+<body>
+<div class="chessboard">
+    <div style="border: solid;border-color: grey;">
+        <div style="border:none;"></div><div style="background-color:grey;">A</div><div>B</div><div style="background-color:grey;">C</div><div>D</div><div style="background-color:grey;">E</div><div>F</div><div style="background-color:grey;">G</div><div>H</div><div style="background-color:grey;"></div>
+    </div>
+    <div>
+        <div style="background-color:grey; line-height: 4.5">1</div><div><img src="img/б тура.png" width="120px" height="120px" ></div><div><img src="img/б конь.png" width="120px" height="120px" ></div><div><img src="img/б слон.png" width="120px" height="120px" ></div><div><img src="img/б король.png" width="120px" height="120px" ></div><div><img src="img/б королева.png" width="120px" height="120px" ></div><div><img src="img/б слон.png" width="120px" height="120px" ></div><div><img src="img/б конь.png" width="120px" height="120px" ></div><div><img src="img/б тура.png" width="120px" height="120px" ></div><div style="line-height: 4.5;transform: rotate(180deg);">1</div>
+    </div>
+    <div>
+        <div style="line-height: 4.5">2</div><div><img src="img/б пешка.png" width="93px" height="93px" ></div><div><img src="img/б пешка.png" width="93px" height="93px" ></div><div><img src="img/б пешка.png" width="93px" height="93px" ></div><div><img src="img/б пешка.png" width="93px" height="93px" ></div><div><img src="img/б пешка.png" width="93px" height="93px" ></div><div><img src="img/б пешка.png" width="93px" height="93px" ></div><div><img src="img/б пешка.png" width="93px" height="93px" ></div><div><img src="img/б пешка.png" width="93px" height="93px" ></div><div style="background-color:grey;line-height: 4.5;transform: rotate(180deg);">2</div>
+    </div>
+    <div>
+        <div style="background-color:grey;line-height: 4.5">3</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div style="line-height: 4.5;transform: rotate(180deg);">3</div>
+    </div>
+    <div>
+        <div style="line-height: 4.5">4</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div style="background-color:grey;line-height: 4.5;transform: rotate(180deg);">4</div>
+    </div>
+    <div>
+        <div style="background-color:grey;line-height: 4.5">5</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div style="line-height: 4.5;transform: rotate(180deg);">5</div>
+    </div>
+    <div>
+        <div style="line-height: 4.5">6</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div style="background-color:grey;line-height: 4.5;transform: rotate(180deg);">6</div>
+    </div>
+    <div>
+        <div style="background-color:grey;line-height: 4.5">7</div><div><img src="img/ч пешка.png" width="93px" height="93px" ></div><div><img src="img/ч пешка.png" width="93px" height="93px" ></div><div><img src="img/ч пешка.png" width="93px" height="93px" ></div><div><img src="img/ч пешка.png" width="93px" height="93px" ></div><div><img src="img/ч пешка.png" width="93px" height="93px" ></div><div><img src="img/ч пешка.png" width="93px" height="93px" ></div><div><img src="img/ч пешка.png" width="93px" height="93px" ></div><div><img src="img/ч пешка.png" width="93px" height="93px" ></div><div style="line-height: 4.5;transform: rotate(180deg);">7</div>
+    </div>
+    <div>
+        <div style="line-height: 4.5">8</div><div><img src="img/ч тура.png" width="120px" height="120px" ></div><div><img src="img/ч конь.png" width="120px" height="120px" ></div><div><img src="img/ч слон.png" width="120px" height="120px" ></div><div><img src="img/ч король.png" width="120px" height="120px" ></div><div><img src="img/ч королева.png" width="120px" height="120px" ></div><div><img src="img/ч слон.png" width="120px" height="120px" ></div><div><img src="img/ч конь.png" width="120px" height="120px" ></div><div><img src="img/ч тура.png" width="120px" height="120px" ></div><div style="background-color:grey;line-height: 4.5;transform: rotate(180deg);">8</div>
+    </div>
+    <div style="border: solid;border-color: grey;border-radius:10px 10px 0 0; transform: rotate(180deg);">
+        <div style="background-color:grey; border: none;"></div><div>H</div><div style="background-color:grey;">G</div><div>F</div><div style="background-color:grey;">E</div><div>D</div><div style="background-color:grey;">C</div><div>B</div><div style="background-color:grey;">A</div><div style="border: none;"></div>
+    </div>
+</div>
+</body>
+</html>
